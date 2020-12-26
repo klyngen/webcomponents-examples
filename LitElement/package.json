@@ -1,0 +1,27 @@
+{
+  "name": "litelement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start": "owc-dev-server --app-index demo/index.html -w"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-replace": "^2.3.1",
+    "owc-dev-server": "^1.0.1",
+    "rollup": "^1.32.1",
+    "rollup-plugin-filesize": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "typescript": "^3.8.3",
+    "web-component-analyzer": "^1.0.3"
+  },
+  "dependencies": {
+    "lit-element": "^2.4.0"
+  }
+}
