@@ -16,7 +16,7 @@
     "sourceMap": true,                     /* Generates corresponding '.map' file. */
     "moduleResolution": "node",
     //"outFile": "./component.js",                       /* Concatenate and emit output to single file. */
-    "outDir": "./",                        /* Redirect output structure to the directory. */
+    "outDir": "./build",                        /* Redirect output structure to the directory. */
     "rootDir": "./src", 
     // "composite": true,                     /* Enable project compilation */
     // "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */
