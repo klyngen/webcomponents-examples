@@ -82,10 +82,14 @@ export class OvertimeVisualizer extends LitElement {
     .overtime-component {
       transition: width 0.5s;
     }
+    .overtime-component--delete {
+      transform: translateX(0);
+    }
+
     `;
   }
 
-  createOvertimeBars(): TemplateResult[] | TemplateResult {
+  private createOvertimeBars(): TemplateResult[] | TemplateResult {
     if (this.overtimeData && this.wrapper) {
       return this.filteredData
         .map(item => 
@@ -118,14 +122,14 @@ export class OvertimeVisualizer extends LitElement {
     }
   }
   
-  getRelativeWidth(value: number): number {
+  private getRelativeWidth(value: number): number {
     if (this.wrapper) {
       return this.wrapper.clientWidth * (value / this.valueSum);
     }
     return 0;
   }
 
-  get valueSum(): number {
+  private get valueSum(): number {
     if (this.overtimeData) {
       return this.overtimeData
         .map(item => item.value)
