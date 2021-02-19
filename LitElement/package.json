@@ -1,8 +1,9 @@
 {
   "name": "overtime-visualizer",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Visualizes n amount of overtime categories",
   "main": "build/overtime-visualizer.js",
+  "types": "build/overtime-visualizer.d.ts",
   "module": "build/overtime-visualizer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
